@@ -17,10 +17,10 @@ import java.util.UUID;
 public abstract class BaseCreateEntity {
 
     @CreatedDate
-    @Column(name = "created_at", updatable = false, nullable = false)
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
     @CreatedBy
-    @Column(name = "created_by", updatable = false, nullable = false)
+    @Column(name = "created_by", updatable = false)
     private UUID createdBy;
 }
